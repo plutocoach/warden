@@ -1,0 +1,32 @@
+name: Close unanswered issues
+
+# Only touches issues waiting on the reporter (needs-info / needs-artifact).
+# Confirmed bugs and triaged requests are never auto-closed.
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/stale@4391f3da665fdf50b6810c1a66712fb9ba21aa93 # v11.0.0
+        with:
+          any-of-issue-labels: needs-info,needs-artifact
+          days-before-issue-stale: 7
+          days-before-issue-close: 7
+          days-before-pr-stale: -1
+          days-before-pr-close: -1
+          stale-issue-label: stale
+          remove-issue-stale-when-updated: true
+          stale-issue-message: >-
+            This issue is waiting on more detail (or a valid spec/plan attachment) and will
+            close in 7 days without an update. Edit the issue or reply to keep it open.
+          close-issue-message: >-
+            Closing for now since there's been no update. Reopen any time with the
+            missing detail or attachment and we'll pick it back up.

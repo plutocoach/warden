@@ -1,0 +1,59 @@
+name: Feature request (Warden spec or plan)
+description: Propose a feature by attaching a spec (preferred) or plan exported from Warden.
+title: "[Feature]: "
+labels: [feature-request]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We take feature requests as a **Warden spec** (preferred) or **plan**, so we can import it straight into Warden and review it properly. Warden drafts it for you in a few minutes.
+
+        **How:** open any project in Warden → **Specs** → **New spec** → describe the feature → edit the requirements → **Export**. [Full guide](https://github.com/plutocoach/warden/blob/main/docs/feature-requests.md)
+
+        A bot checks the attachment. Requests without a valid spec or plan are labelled `needs-artifact` and closed after 14 days.
+
+  - type: input
+    id: summary
+    attributes:
+      label: One-line summary
+      placeholder: "Show the blocking rule's YAML in the block message"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What are you attaching?
+      options:
+        - Spec (.warden-spec.json), recommended
+        - Plan (.warden-plan.json)
+    validations:
+      required: true
+
+  - type: textarea
+    id: artifact
+    attributes:
+      label: Spec or plan file
+      description: |
+        Drag your exported `.warden-spec.json` or `.warden-plan.json` file here. If the upload doesn't work, paste the file contents inside a ```json block.
+      placeholder: Drop the exported file here
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem, in your words
+      description: What were you trying to do when you wanted this? One or two sentences.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing requests. If there's a similar one, I've upvoted it instead.
+          required: true
+        - label: The attached file was exported from Warden, and I've read it and removed anything private. This repository is public.
+          required: true

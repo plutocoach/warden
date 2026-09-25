@@ -1,0 +1,108 @@
+name: Bug report
+description: Something in Warden doesn't work as expected. Please make it detailed and self-contained.
+title: "[Bug]: "
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please write this so someone who has never seen your machine can reproduce it.
+
+        **Security issue or policy bypass?** (The agent ran something your policy should have stopped.) Don't file it here. [Report it privately](https://github.com/plutocoach/warden/security/advisories/new).
+
+        **Do not attach Warden's diagnostics report.** It contains your session messages, logs, and settings. If we need it, we'll ask you to email it.
+
+  - type: input
+    id: version
+    attributes:
+      label: Warden version
+      description: Warden menu → About Warden
+      placeholder: "1.12.0"
+    validations:
+      required: true
+
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version and Mac
+      placeholder: "macOS 26.1, MacBook Pro M3"
+    validations:
+      required: true
+
+  - type: input
+    id: provider
+    attributes:
+      label: Model provider or agent
+      description: What was the agent running on?
+      placeholder: "Anthropic, OpenAI, an ACP agent, ..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - A block, ask, or policy verdict was wrong
+        - Policies view / custom rules
+        - Decisions view
+        - Chat / agent
+        - Specs or plans
+        - Terminal / workspace
+        - Install, license, or updates
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Include any error text copied exactly.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Numbered, starting from a fresh launch.
+      placeholder: |
+        1. Open a project with ...
+        2. Set profile to Guarded
+        3. Ask the agent to ...
+        4. See ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+
+  - type: textarea
+    id: policy
+    attributes:
+      label: Policy involved (if any)
+      description: The protection name and setting, or the custom rule YAML. Remove anything private.
+      render: yaml
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or log excerpts
+      description: Only the relevant part, with secrets, private code, and internal names removed.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and this hasn't been reported.
+          required: true
+        - label: This is not a security issue or policy bypass. Those go through private reporting.
+          required: true
+        - label: I removed secrets, private code, and internal names from everything above.
+          required: true

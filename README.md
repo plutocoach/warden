@@ -16,6 +16,10 @@ Warden is built by [Pluto](https://warden.zsguard.com) on top of the open-source
 [goose](https://github.com/block/goose) agent (Apache 2.0), with the ZSGuard
 policy engine added.
 
+> **Coming soon: open-source core.** The core of the Warden app will be open
+> source soon, published right here in this repository. Watch or star the repo to
+> hear when it lands.
+
 ## What you get
 
 - **Protections that work from day one.** Secrets, destructive shell commands,
@@ -66,9 +70,10 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening an issue.
 
 ## Open source
 
-Warden is built on goose, which is Apache 2.0. We plan to publish Warden's core
-in this repository. Until then, this repository holds the docs and the issue
-tracker, and we are not accepting code contributions yet.
+The core of the Warden app will be open source soon, published in this
+repository. Warden is built on goose, which is also Apache 2.0. Until the core
+lands, this repository holds the docs and the issue tracker, and we are not
+accepting code contributions yet.
 
 ## License and disclaimer
 

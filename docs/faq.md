@@ -25,7 +25,8 @@ Warden is built on the open-source [goose](https://github.com/block/goose) agent
 and plans, and more.
 
 **Is Warden open source?**
-Not yet. We plan to publish Warden's core in this repository. For now it holds
+Not yet, but soon. The core of the Warden app will be open source, published in
+this repository. Watch or star the repo to hear when it lands. For now it holds
 the docs and the issue tracker.
 
 **Is there a version for teams?**

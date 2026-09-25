@@ -48,9 +48,9 @@ you'd like to talk through before writing a spec.
 
 ## Code contributions
 
-We're not accepting pull requests yet, and they are closed automatically. We plan
-to publish Warden's core here. When we do, this section will explain how to
-contribute code.
+We're not accepting pull requests yet, and they are closed automatically. The
+core of the Warden app will be open source soon, published here. When it lands,
+this section will explain how to contribute code.
 
 ## Conduct
 

@@ -25,5 +25,5 @@ jobs:
           REPO: ${{ github.repository }}
           MESSAGE: >-
             Thanks for this! We're not accepting code contributions yet, so pull requests
-            are closed automatically. We plan to publish Warden's core here. To propose a
+            are closed automatically. The core of the Warden app will be open source here soon. To propose a
             change, open a feature request with a Warden spec: see CONTRIBUTING.md.

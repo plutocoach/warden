@@ -1,6 +1,8 @@
 # Warden
 
-**A desktop AI coding agent with guardrails you can check.**
+**Ship faster with confidence: a desktop AI coding agent with guardrails you can check.**
+
+Website: [WardenOfPluto.com](https://wardenofpluto.com) · Docs: [WardenOfPluto.com/docs](https://wardenofpluto.com/docs)
 
 Warden checks every action its agent takes against your policy *before* it runs:
 shell commands, file reads and writes, network calls, git pushes, and MCP tool
@@ -12,9 +14,9 @@ The checks are deterministic and run on your machine. The same action always
 gets the same answer. It is a policy engine, not a model guessing whether
 something looks risky.
 
-Warden is built by [Pluto](https://warden.zsguard.com) on top of the open-source
-[goose](https://github.com/block/goose) agent (Apache 2.0), with the ZSGuard
-policy engine added.
+Warden is built by [Pluto Coach](https://wardenofpluto.com) on top of the
+open-source [goose](https://github.com/block/goose) agent (Apache 2.0), with our
+ZSGuard policy engine added.
 
 > **Coming soon: open-source core.** The core of the Warden app will be open
 > source soon, published right here in this repository. Watch or star the repo to
@@ -44,13 +46,19 @@ policy engine added.
 
 ## Get started
 
-Warden currently runs on **macOS on Apple Silicon (M1 or later)**.
+Warden runs on **macOS on Apple Silicon (M1 or later)** and **Linux** (x86_64
+and arm64), and on **Windows through WSL** (preview).
 
-1. Get Warden at **[warden.zsguard.com](https://warden.zsguard.com)**. We email
-   you a license key and the download link.
+1. Get Warden free at **[WardenOfPluto.com](https://wardenofpluto.com)**. We
+   email you a license key, and the Mac download starts straight away. On Linux
+   or Windows, follow the [install guide](https://wardenofpluto.com/docs/install).
 2. Follow the [Getting started guide](docs/getting-started.md).
 
 ## Docs
+
+The full documentation lives at
+**[WardenOfPluto.com/docs](https://wardenofpluto.com/docs)**. This repository
+also has:
 
 - [Getting started](docs/getting-started.md)
 - [Policies and protections](docs/policies.md)
@@ -81,8 +89,8 @@ The contents of this repository are licensed under the
 [Apache License 2.0](LICENSE).
 
 The Warden app is distributed separately under the terms shown when you download
-it at [warden.zsguard.com](https://warden.zsguard.com/#terms). The free edition
-is a developer preview for personal, non-commercial use. It is provided "as is",
-without warranty of any kind, and to the maximum extent permitted by law Pluto
+it from [WardenOfPluto.com](https://wardenofpluto.com/#terms). The free edition
+is free to use, including for commercial work. It is provided "as is", without
+warranty of any kind, and to the maximum extent permitted by law Pluto
 Coach Ltd accepts no liability for any loss or damage arising from its use.
 Warden Team customers are covered by the terms of their own agreement.

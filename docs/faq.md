@@ -17,7 +17,9 @@ Yes. When something is blocked, allow that exact action once, for the chat, or
 always in the project. The rule still applies to everything else.
 
 **Which platforms are supported?**
-macOS on Apple Silicon (M1 or later) today.
+macOS on Apple Silicon (M1 or later), Linux (x86_64 and arm64, as `.deb` and
+`.rpm`), and Windows through WSL (preview). Intel Macs are not supported yet. See
+the [install guide](https://wardenofpluto.com/docs/install).
 
 **How does Warden relate to goose?**
 Warden is built on the open-source [goose](https://github.com/block/goose) agent
@@ -31,7 +33,15 @@ the docs and the issue tracker.
 
 **Is there a version for teams?**
 Yes. Warden Team lets a company set the policies and skills every developer's
-Warden runs. See [warden.zsguard.com](https://warden.zsguard.com).
+Warden runs. See [WardenOfPluto.com](https://wardenofpluto.com/#team).
+
+**Can I use the free edition at work?**
+Yes. It is licensed for commercial work, for your employer, your clients or your
+own company.
 
 **How do I update?**
-Warden updates itself when a new version is available.
+On the Mac, Warden updates itself when a new version is available. On Linux,
+install the new package from [WardenOfPluto.com](https://wardenofpluto.com).
+
+**Where are the full docs?**
+At [WardenOfPluto.com/docs](https://wardenofpluto.com/docs).

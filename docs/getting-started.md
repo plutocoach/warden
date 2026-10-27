@@ -1,5 +1,9 @@
 # Getting started
 
+This guide covers the Mac. For Linux or Windows (through WSL), follow the
+[install guide](https://wardenofpluto.com/docs/install) for step 1, then carry on
+from step 2.
+
 ## Requirements
 
 - A Mac with Apple Silicon (M1 or later)
@@ -7,8 +11,9 @@
 
 ## 1. Download and install
 
-1. Go to [warden.zsguard.com](https://warden.zsguard.com) and enter your email.
-   We email you a **license key** and a download link.
+1. Go to [WardenOfPluto.com](https://wardenofpluto.com), choose **Get Warden
+   free** and enter your details. We email you a **license key**, and the
+   download starts straight away.
 2. Open the downloaded `.dmg` and drag **Warden** into **Applications**.
 3. Open Warden. It updates itself when new versions ship.
 
@@ -53,4 +58,5 @@ Open **Decisions** to see every verdict with the rule behind it.
 
 - Write your own rules: [Policies and protections](policies.md)
 - Plan work before coding: open a project's **Specs** or **Plans** tab.
+- Read the full docs at [WardenOfPluto.com/docs](https://wardenofpluto.com/docs).
 - Found a bug or want a feature? See [CONTRIBUTING.md](../CONTRIBUTING.md).
